@@ -13,6 +13,8 @@ $ cd express-4.x-twitter-example
 $ npm install
 ```
 
+Set "Callback URLs" to `http://127.0.0.1:3000/login/twitter/return` at https://apps.twitter.com/
+
 The example uses environment variables to configure the consumer key and
 consumer secret needed to access Twitter's API.  Start the server with those
 variables set to the appropriate credentials.
