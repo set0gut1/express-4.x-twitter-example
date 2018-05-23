@@ -15,6 +15,7 @@ passport.use(new Strategy({
     consumerSecret: process.env.CONSUMER_SECRET
   },
   function(token, tokenSecret, profile, cb) {
+    console.log(JSON.stringify({token, tokenSecret}));
     // In this example, the user's Twitter profile is supplied as the user
     // record.  In a production-quality application, the Twitter profile should
     // be associated with a user record in the application's database, which
